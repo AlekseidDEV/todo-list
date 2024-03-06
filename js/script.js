@@ -33,11 +33,11 @@ const render = () => {
             todoList.append(li)
         }
 
-        li.querySelector('.todo-complete').addEventListener('click', (e) => {
+        li.querySelector('.todo-complete').addEventListener('click', () => {
             item.completed = !item.completed
             render()
         })
-        li.querySelector('.todo-remove').addEventListener('click', (e) => {
+        li.querySelector('.todo-remove').addEventListener('click', () => {
             todoData.splice(index,  index === 0 ? index = 1 : index)
             render()
         })
